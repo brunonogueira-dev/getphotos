@@ -1,0 +1,14 @@
+.header-geral {
+  height: 60px;
+  min-height: 40px;
+  background-color: $color-alt;
+
+  .icon-menu, .icon-notification {
+    font-size: 1em;
+    color: $cor-primaria !important;
+    font-weight: bolder;
+  }
+  .img-logo {
+    height: 32px;
+  }
+}

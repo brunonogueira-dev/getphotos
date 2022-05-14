@@ -118,5 +118,18 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
 }
 
 /** Home **/
+.header-geral {
+  height: 60px;
+  min-height: 40px;
+  background-color: #EDF7FF;
+}
+.header-geral .icon-menu, .header-geral .icon-notification {
+  font-size: 1em;
+  color: #3F3073 !important;
+  font-weight: bolder;
+}
+.header-geral .img-logo {
+  height: 32px;
+}
 
 /*# sourceMappingURL=style.css.map */
