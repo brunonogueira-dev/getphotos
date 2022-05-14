@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html, body {
+  height: 100%;
+}
+
+a, p, span, li, h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+.estrutura {
+  height: 100% !important;
+}
+
+.header-login .logo-div {
+  padding: 40px;
+  background-color: #EDF7FF;
+}
+.header-login .logo-div .logo {
+  margin-top: 40px;
+  height: 60px;
+  transition: 0.2s ease-in-out transform;
+}
+
+.login .base-login {
+  background-color: #EDF7FF;
+  height: 100%;
+}
+.login .base-login h3 {
+  color: #3F3073;
+  text-align: center;
+}
+.login .base-login .form-login .div-form {
+  margin-top: 16px;
+}
+.login .base-login .form-login .div-form label {
+  color: #A8AEBF;
+}
+.login .base-login .form-login .div-botao .botao {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #3F3073;
+  border: 1px solid #3F3073;
+  margin-bottom: 20px;
+}
+.login .base-login .form-login .div-botao .botao:hover {
+  background-color: #232659;
+  border: 1px solid #232659;
+}
+.login .base-login .form-login .login-redes {
+  border-top: 1px solid #A8AEBF;
+}
+.login .base-login .form-login .login-redes .btn-redes {
+  width: 100%;
+  background-color: transparent;
+  color: #3F3073;
+  border: 1px solid #3F3073;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.login .base-login .form-login .login-redes .btn-redes:hover {
+  color: #232659;
+  border: 1px solid #232659;
+}
+.login .base-login .form-login .login-redes .btn-redes .bi {
+  margin-right: 10px;
+}
+.login .base-login .form-login .login-redes span {
+  color: #A8AEBF;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.login .base-login .form-login .cadastro {
+  margin-top: 20px;
+}
+.login .base-login .form-login .cadastro p {
+  text-align: center;
+  color: #A8AEBF;
+  font-weight: 500;
+}
+.login .base-login .form-login .cadastro p a {
+  color: #A64985;
+}
+.login .base-login .form-login .cadastro p a:hover, .login .base-login .form-login .cadastro p a:focus {
+  color: #723973;
+}
+
+/*# sourceMappingURL=style.css.map */

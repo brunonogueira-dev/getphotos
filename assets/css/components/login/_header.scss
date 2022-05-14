@@ -1,0 +1,15 @@
+.estrutura{
+  height: 100% !important;
+}
+.header-login {
+  .logo-div {
+    padding: 40px;
+    background-color: $color-alt;
+
+    .logo {
+      margin-top: 40px;
+      height: 60px;
+      transition: .2s ease-in-out transform;
+    }
+  }
+}
