@@ -84,4 +84,21 @@
       }
     }
   }
+  .none-message{
+    color: red;
+    display: none;
+    transition: .5s;
+    font-size: 0px;
+    text-align: right;
+  }
+  .active-message{
+    color: red;
+    transition: .5s;
+    font-size: 12px;
+    text-align: right;
+  }
+  #cad-alert{
+    text-align: center !important;
+    color: green;
+  }
 }

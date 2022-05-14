@@ -92,6 +92,23 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
   color: #A8AEBF;
   font-weight: 100;
 }
+.login .none-message {
+  color: red;
+  display: none;
+  transition: 0.5s;
+  font-size: 0px;
+  text-align: right;
+}
+.login .active-message {
+  color: red;
+  transition: 0.5s;
+  font-size: 12px;
+  text-align: right;
+}
+.login #cad-alert {
+  text-align: center !important;
+  color: green;
+}
 
 .slide {
   padding: 0;

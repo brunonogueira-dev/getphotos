@@ -35,28 +35,32 @@
                         <div class="row">
                             <div class="col-12 form-login">
                                 <div class="row">
-                                    <form action="#">
+                                    <form action="#" id="formUserCad">
                                         <div class="col-12 div-form">
                                             <label for="formularioLogin">Nome Completo</label>
                                             <input type="text" class="form-control" id="nome"
                                                    placeholder="Digite seu Nome Completo:"
                                                    name="nome">
+                                            <p class="none-message" id="name-alert"></p>
                                         </div>
                                         <div class="col-12 div-form">
                                             <label for="formularioLogin">E-mail</label>
-                                            <input type="email" class="form-control" id="e-mail"
+                                            <input type="email" class="form-control" id="email"
                                                    placeholder="Digite seu E-mail:"
                                                    name="usuario">
+                                            <p class="none-message" id="email-alert"></p>
                                         </div>
                                         <div class="col-12 div-form">
                                             <label for="formularioLogin">Senha</label>
                                             <input type="password" class="form-control" id="senha" name="senha"
                                                    placeholder="Digite sua Senha:">
+                                            <p class="none-message" id="pass-alert"></p>
                                         </div>
                                         <div class="col-12 div-botao">
-                                            <button type="submit" class="btn btn-primary botao">Cadastrar</button>
+                                            <button type="submit" class="btn btn-primary botao" id="btnCad">Cadastrar</button>
                                         </div>
                                     </form>
+                                    <p class="none-message" id="cad-alert"></p>
                                 </div>
                                 <div class="row login-redes">
                                     <span>ou cadastre-se usando:</span>
@@ -130,5 +134,7 @@
         </section>
     </div>
 </div>
+
+<script src="assets/js/form-user-cad.js"></script>
 </body>
 </html>
