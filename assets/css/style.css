@@ -59,8 +59,9 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 .login .base-login .form-login .login-redes .btn-redes:hover {
-  color: #232659;
+  color: #FFF;
   border: 1px solid #232659;
+  background-color: #3F3073;
 }
 .login .base-login .form-login .login-redes .btn-redes .bi {
   margin-right: 10px;

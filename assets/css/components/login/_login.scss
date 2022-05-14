@@ -45,8 +45,9 @@
           font-weight: 500;
 
           &:hover {
-            color: $cor-quartenaria;
+            color: $link-color;
             border: 1px solid $cor-quartenaria;
+            background-color: $cor-primaria;
           }
 
           .bi {

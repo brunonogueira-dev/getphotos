@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="/assets/images/fivicon.png">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+    <title>Get Photos - Area de Login</title>
+</head>
+<body>
+<div class="container-fluid h-100">
+    <div class="row h-100">
+        <div class="col-12 col-lg-4 col-xl-3 h-100 estrutura shadow-lg ">
+            <header class="header-login">
+                <div class="row d-flex">
+                    <div class="col-12 d-flex justify-content-center logo-div">
+                        <a href="#">
+                            <img src="assets/images/ExportarEm-alta-2048.png" alt="Logo " class="logo">
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <main class="login base-login">
+                <div class="row d-flex base-login">
+                    <div class="col-12">
+                        <h3>Login</h3>
+                        <div class="row">
+                            <div class="col-12 form-login">
+                                <div class="row">
+                                    <form action="#">
+                                        <div class="col-12 div-form">
+                                            <label for="formularioLogin">E-mail</label>
+                                            <input type="email" class="form-control" id="e-mail"
+                                                   placeholder="Digite seu E-mail:"
+                                                   name="usuario">
+                                        </div>
+                                        <div class="col-12 div-form">
+                                            <label for="formularioLogin">Senha</label>
+                                            <input type="password" class="form-control" id="senha" name="senha"
+                                                   placeholder="Digite sua Senha:">
+                                        </div>
+                                        <div class="col-12 div-botao">
+                                            <button type="submit" class="btn btn-primary botao">Entrar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row login-redes">
+                                    <span>ou continue pelo</span>
+                                    <div class="col-6">
+                                        <button type="submit" class="btn btn-primary btn-redes google"><i
+                                                class="bi bi-google"></i>Google
+                                        </button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="submit" class="btn btn-primary btn-redes facebook"><i
+                                                class="bi bi-facebook"></i>Facebook
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row cadastro">
+                                    <div class="col-12">
+                                        <p>Não possui cadastro? <a href="#">Cadastra-se Aqui!</a></p>
+                                    </div>
+                                </div>
+                                <footer class="row roda-pe__login">
+                                    <div class="col-12">
+                                        <p>getPhotos &copy; 2022 - todos os direitos reservados</p>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <section class="col-lg-8 col-xl-9 d-none d-lg-block">
+            <div class="row h-100">
+                <div id="" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner" data-bs-interval="1000">
+                        <div class="carousel-item active">
+                            <img src="assets/images/slide/emotional-woman-red-beret-stylish-shirt-joyful-surprise-looks-camera-holds-white-smartphone-pink-background.jpg"
+                                 class="d-block overflow-hidden w-100 min-vh-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Autor: @instagram_1</h5>
+                                <p>Sua foto pode também pode ser destaque aqui!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="assets/images/slide/african-american-woman-overalls-beret-posed-outdoor-against-wooden-background.jpg"
+                                 class="d-block overflow-hidden  w-100 min-vh-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Autor: @instagram_2</h5>
+                                <p>Sua foto pode também pode ser destaque aqui!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="assets/images/slide/photo-african-american-girl-does-lucky-dance-raises-hands-up-hooray-feels-like-champion-after-getting-triumph-gazes-happily-somewhere-has-fun-feels-rthythm-music-isolated-yellow-wall.jpg"
+                                 class="d-block overflow-hidden w-100 min-vh-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Autor: @instagram_3</h5>
+                                <p>Sua foto pode também pode ser destaque aqui!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>
