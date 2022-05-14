@@ -9,6 +9,7 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
 
 .estrutura {
   background-color: #EDF7FF;
+  z-index: 9999;
 }
 
 .header-login .logo-div {
@@ -93,11 +94,6 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
 
 .slide {
   padding: 0;
-  overflow: hidden;
-}
-.slide img {
-  width: auto;
-  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
