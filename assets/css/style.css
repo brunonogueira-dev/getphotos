@@ -52,6 +52,7 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
   border-top: 1px dashed #A8AEBF;
 }
 .login .base-login .form-login .login-redes .btn-redes {
+  transition: 0.5s;
   width: 100%;
   background-color: transparent;
   color: #3F3073;
@@ -60,6 +61,7 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 .login .base-login .form-login .login-redes .btn-redes:hover {
+  transition: 0.5s;
   color: #FFF;
   border: 1px solid #232659;
   background-color: #3F3073;
