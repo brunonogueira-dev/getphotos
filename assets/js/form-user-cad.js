@@ -1,5 +1,3 @@
-
-
 var btnCad = document.querySelector("#btnCad");
 
 btnCad.addEventListener("click", function validaUser(event){
@@ -13,6 +11,7 @@ btnCad.addEventListener("click", function validaUser(event){
     //efetuar cadastro aqui
     if (validaForm){
         messageCad("#cad-alert", "Cadastrado com sucesso", "none-message", "active-message")
+        formUser.reset();
     }else{
         messageCad("#cad-alert", "Cadastrado com sucesso", "active-message", "none-message")
     }
