@@ -40,17 +40,20 @@
                                             <label for="formularioLogin">E-mail</label>
                                             <input type="email" class="form-control" id="email"
                                                    placeholder="Digite seu E-mail:"
-                                                   name="usuario">
+                                                   name="email">
+                                            <p class="none-message" id="email-alert"></p>
                                         </div>
                                         <div class="col-12 div-form">
                                             <label for="formularioLogin">Senha</label>
                                             <input type="password" class="form-control" id="senha" name="senha"
                                                    placeholder="Digite sua Senha:">
+                                            <p class="none-message" id="pass-alert"></p>
                                         </div>
                                         <div class="col-12 div-botao">
                                             <button type="submit" class="btn btn-primary botao" id="btnLogin">Entrar</button>
                                         </div>
                                     </form>
+                                    <p class="none-message" id="loginSucess"></p>
                                 </div>
                                 <div class="row login-redes">
                                     <span>ou continue pelo</span>
@@ -124,6 +127,7 @@
         </section>
     </div>
 </div>
-<script src="assets/js/form-user-login.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/user/form-user-login.js"></script>
 </body>
 </html>

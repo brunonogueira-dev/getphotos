@@ -1,5 +1,10 @@
 @import "abstract/variables";
 @import "abstract/base";
-@import "components/login/header";
-@import "components/login/login";
-@import "components/login/slider";
+
+/** Telas de Login **/
+@import "components/user/header";
+@import "components/user/login";
+@import "components/user/slider";
+
+/** Home **/
+@import "components/home/header";
