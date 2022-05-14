@@ -8,15 +8,17 @@
     <link rel="icon" type="image/x-icon" href="/assets/images/fivicon.png">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
     <link href="./assets/css/style.css" rel="stylesheet">
 
     <title>Get Photos - Area de Login</title>
 </head>
-<body class="h-100">
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12 col-lg-4 col-xl-3 estrutura">
+<body>
+<div class="container-fluid h-100">
+    <div class="row h-100">
+        <div class="col-12 col-lg-4 col-xl-3 h-100 estrutura shadow-lg">
             <header class="header-login">
                 <div class="row d-flex">
                     <div class="col-12 d-flex justify-content-center logo-div">
@@ -68,14 +70,33 @@
                                         <p>Não possui cadastro? <a href="#">Cadastra-se Aqui!</a></p>
                                     </div>
                                 </div>
+                                <footer class="row roda-pe__login">
+                                    <div class="col-12">
+                                        <p>getPhotos &copy; 2022 - todos os direitos reservados</p>
+                                    </div>
+                                </footer>
                             </div>
                         </div>
                     </div>
                 </div>
             </main>
         </div>
-        <section class="col-lg-8 col-xl-9 d-none d-lg-block" style="background: #3F3073;">
-            <h1>teste</h1>
+        <section class="col-lg-8 col-xl-9 d-none d-lg-block">
+            <div class="row">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/slide/emotional-woman-red-beret-stylish-shirt-joyful-surprise-looks-camera-holds-white-smartphone-pink-background.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/slide/african-american-woman-overalls-beret-posed-outdoor-against-wooden-background.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/slide/photo-african-american-girl-does-lucky-dance-raises-hands-up-hooray-feels-like-champion-after-getting-triumph-gazes-happily-somewhere-has-fun-feels-rthythm-music-isolated-yellow-wall.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </div>

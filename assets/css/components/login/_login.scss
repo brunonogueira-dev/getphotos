@@ -34,7 +34,7 @@
       }
 
       .login-redes {
-        border-top: 1px solid $background-color;
+        border-top: 1px dashed $background-color;
 
         .btn-redes {
           width: 100%;
@@ -74,6 +74,12 @@
             }
           }
         }
+      }
+      .roda-pe__login{
+        text-align: center;
+        margin-top: 20px;
+        color: $background-color;
+        font-weight: 100;
       }
     }
   }
