@@ -121,15 +121,47 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
 .header-geral {
   height: 60px;
   min-height: 40px;
-  background-color: #EDF7FF;
+  background-color: #3F3073;
 }
 .header-geral .icon-menu, .header-geral .icon-notification {
   font-size: 1em;
-  color: #3F3073 !important;
+  color: #FFF !important;
   font-weight: bolder;
 }
 .header-geral .img-logo {
   height: 32px;
+}
+
+.menu {
+  height: 91vh;
+  display: block;
+  background-color: #3F3073;
+  z-index: 9999 !important;
+  position: relative;
+  left: -100vw;
+  transition: 0.5s;
+}
+.menu.ativo {
+  position: relative;
+  left: 0;
+  transition: 0.5s;
+}
+.menu .navbar-nav .nav-item a {
+  font-size: 1rem;
+  color: #a9a9a9;
+  text-transform: uppercase;
+}
+.menu .navbar-nav .nav-item a.active, .menu .navbar-nav .nav-item a:focus {
+  color: #f2f2f2 !important;
+}
+.menu .navbar-nav .nav-item a.active .icon-menu, .menu .navbar-nav .nav-item a:focus .icon-menu {
+  margin-right: 8px;
+  padding-right: 16px;
+  border-right: 3px solid #FFF;
+}
+.menu .navbar-nav .nav-item a .icon-menu {
+  margin-right: 11px;
+  padding-right: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,11 +1,11 @@
 .header-geral {
   height: 60px;
   min-height: 40px;
-  background-color: $color-alt;
+  background-color: $cor-primaria;
 
   .icon-menu, .icon-notification {
     font-size: 1em;
-    color: $cor-primaria !important;
+    color: $link-color !important;
     font-weight: bolder;
   }
   .img-logo {
