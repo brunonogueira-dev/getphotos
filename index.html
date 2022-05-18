@@ -17,7 +17,7 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <header class="col-12 header-geral fixed-top shadow">
+        <header class="col-12 header-geral shadow-lg">
             <div class="row h-100 mh-100 d-flex justify-content-center">
                 <div class="col-2 d-flex justify-content-center justify-content-lg-start">
                     <button class="bg-transparent border-0" id="menu-toggle"><i class="bi bi-list icon-menu"></i>
@@ -33,42 +33,63 @@
                 </div>
             </div>
         </header>
-        <nav class="navbar menu col-10 col-lg-4 shadow" id="menu-principal">
-            <div class="container">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html"><i
-                                class="bi bi-house-door-fill icon-menu"></i> Home</a>
-                    </li>
-                    <li class="nav-item">
-
-                        <a class="nav-link" href="#"><i class="bi bi-brush-fill icon-menu"></i>Personalização</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-check2-square icon-menu"></i>Seleção de Fotos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-person-circle icon-menu"></i>Clientes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-cash-coin icon-menu"></i>Ganhe Créditos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-postcard-heart icon-menu"></i>Cartão Fidelidade</a>
-                    </li>
-                    <hr/>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-box2-heart icon-menu"></i>Pacotes & Valores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-question-octagon-fill icon-menu"></i>Suporte</a>
-                    </li>
-
-                </ul>
-            </div>
+        <nav class="navbar menu shadow-lg d-flex justify-content-start align-items-center" id="menu-principal">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"><i
+                            class="bi bi-house-door-fill icon-menu"></i><span class="home"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-brush-fill icon-menu"></i><span class="personalizacao"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-check2-square icon-menu"></i><span class="sele-fotos"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-person-circle icon-menu"></i><span class="cliente"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-cash-coin icon-menu"></i><span class="credito"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-postcard-heart icon-menu"></i><span class="cartao"></span></a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-box2-heart icon-menu"></i><span class="pacote"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-question-octagon-fill icon-menu"></i><span class="suporte"></span></a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-person-heart icon-menu"></i><span class="conta"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-gear-wide-connected icon-menu"></i><span class="configuracao"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-box-arrow-right icon-menu"></i><span class="sair"></span></a>
+                </li>
+            </ul>
         </nav>
     </div>
 </div>
+<div class="painel-inicio">
+    <div class="container">
+        <div class="row">
+            <main class="painel-inicio">
+                <div class="col-12"><h1 class="text-center">Painel do Fotografo</h1></div>
+                <div class="row d-flex justify-content-center align-items-center gap-lg-5 gap-3">
+                    <section class="col-12 col-lg-3 cartao bg-dark"><h1>texto</h1></section>
+                    <section class="col-12 col-lg-3 cartao bg-dark"><h1>texto</h1></section>
+                    <section class="col-12 col-lg-3  cartao bg-dark"><h1>texto</h1></section>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
 <script src="assets/js/menu.js"></script>
 </body>
 </html>

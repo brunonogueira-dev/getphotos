@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html, body {
+  background: #EDF7FF !important;
   height: 100%;
 }
 
@@ -123,6 +124,7 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
   min-height: 40px;
   background-color: #3F3073;
   z-index: 2200;
+  border-bottom: 3px solid #A64985;
 }
 .header-geral .icon-menu, .header-geral .icon-notification {
   font-size: 1em;
@@ -135,35 +137,96 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
 
 .menu {
   height: 100vh;
-  display: block;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
   background-color: #3F3073;
   z-index: 2100 !important;
-  position: relative;
+  position: absolute;
   left: -100vw;
   transition: 0.5s;
   padding-top: 80px;
+  border-right: 3px solid #A64985;
 }
 .menu.ativo {
-  position: relative;
-  left: 0;
+  left: 0vw;
   transition: 0.5s;
 }
+.menu .navbar-nav hr {
+  color: #FFF;
+}
 .menu .navbar-nav .nav-item a {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #a9a9a9;
   text-transform: uppercase;
-}
-.menu .navbar-nav .nav-item a.active, .menu .navbar-nav .nav-item a:focus {
-  color: #f2f2f2 !important;
-}
-.menu .navbar-nav .nav-item a.active .icon-menu, .menu .navbar-nav .nav-item a:focus .icon-menu {
-  margin-right: 8px;
-  padding-right: 16px;
-  border-right: 3px solid #FFF;
+  font-weight: 500;
 }
 .menu .navbar-nav .nav-item a .icon-menu {
   margin-right: 11px;
   padding-right: 16px;
+}
+.menu .navbar-nav .nav-item a.active, .menu .navbar-nav .nav-item a:focus, .menu .navbar-nav .nav-item a:hover {
+  color: #FFF !important;
+}
+.menu .navbar-nav .nav-item a.active .icon-menu, .menu .navbar-nav .nav-item a:focus .icon-menu, .menu .navbar-nav .nav-item a:hover .icon-menu {
+  margin-right: 8px;
+  padding-right: 16px;
+  border-right: 3px solid #FFF;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    width: 60px;
+    left: 0vw;
+    transition: 0.5s;
+  }
+  .menu.ativo {
+    width: 300px;
+    left: 0vw;
+    transition: 0.1s;
+  }
+  .menu.ativo .nav-item {
+    transition: 0.1s;
+  }
+  .menu.ativo .nav-item a .icon-menu {
+    margin-right: 11px !important;
+    padding-right: 16px !important;
+    border-right: 0px !important;
+  }
+  .menu.ativo .nav-item a.active, .menu.ativo .nav-item a:focus, .menu.ativo .nav-item a:hover {
+    color: #FFF !important;
+  }
+  .menu.ativo .nav-item a.active .icon-menu, .menu.ativo .nav-item a:focus .icon-menu, .menu.ativo .nav-item a:hover .icon-menu {
+    font-size: 1.2rem;
+    margin-right: 8px !important;
+    padding-right: 16px !important;
+    border-right: 3px solid #FFF !important;
+    border-bottom: 0px !important;
+  }
+
+  .nav-item a .icon-menu {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .nav-item a.active, .nav-item a:focus, .nav-item a:hover {
+    color: #FFF !important;
+  }
+  .nav-item a.active .icon-menu, .nav-item a:focus .icon-menu, .nav-item a:hover .icon-menu {
+    font-size: 1.2rem;
+    margin: 0px !important;
+    padding: 0px !important;
+    border-right: 0px !important;
+    border-bottom: 3px solid #FFF;
+  }
+}
+.painel-inicio {
+  display: grid;
+  margin-top: 16px;
+}
+.painel-inicio h1 {
+  color: #3F3073;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

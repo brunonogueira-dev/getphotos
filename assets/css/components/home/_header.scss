@@ -3,6 +3,7 @@
   min-height: 40px;
   background-color: $cor-primaria;
   z-index: 2200;
+  border-bottom: 3px solid $cor-segundaria;
 
   .icon-menu, .icon-notification {
     font-size: 1em;

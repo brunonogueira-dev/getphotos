@@ -1,34 +1,102 @@
 .menu{
   height: 100vh;
-  display: block;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
   background-color: $cor-primaria;
   z-index: 2100 !important;
-  position: relative;
+  position: absolute;
   left: -100vw;
   transition: 0.5s;
   padding-top: 80px;
-  &.ativo{
-    position: relative;
-    left: 0;
+  border-right: 3px solid $cor-segundaria;
+
+  &.ativo {
+    left: 0vw;
     transition: 0.5s;
   }
-  .navbar-nav{
-    .nav-item{
-      a{
-        font-size: 1rem;
+
+  .navbar-nav {
+    hr {
+      color: $link-color;
+    }
+
+    .nav-item {
+      a {
+        font-size: 1.2rem;
         color: #a9a9a9;
         text-transform: uppercase;
-        &.active, &:focus{
-          color: #f2f2f2 !important;
-          .icon-menu{
+        font-weight: 500;
+
+        .icon-menu {
+          margin-right: 11px;
+          padding-right: 16px;
+        }
+
+        &.active, &:focus, &:hover {
+          color: $link-color !important;
+
+          .icon-menu {
             margin-right: 8px;
             padding-right: 16px;
             border-right: 3px solid $link-color;
           }
         }
-        .icon-menu{
-          margin-right: 11px;
-          padding-right: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    width: 60px;
+    left: 0vw;
+
+    transition: 0.5s;
+    &.ativo {
+      width: 300px;
+      left: 0vw;
+      transition: 0.1s;
+      .nav-item {
+        transition: 0.1s;
+        a {
+          .icon-menu {
+            margin-right: 11px !important;
+            padding-right: 16px !important;
+            border-right: 0px !important;
+          }
+
+          &.active, &:focus, &:hover {
+            color: $link-color !important;
+
+            .icon-menu {
+              font-size: 1.2rem;
+              margin-right: 8px !important;
+              padding-right: 16px !important;
+              border-right: 3px solid $link-color !important;
+              border-bottom: 0px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .nav-item {
+    a {
+      .icon-menu {
+        margin: 0px !important;
+        padding: 0px !important;
+      }
+
+      &.active, &:focus, &:hover {
+        color: $link-color !important;
+
+        .icon-menu {
+          font-size: 1.2rem;
+          margin: 0px !important;
+          padding: 0px !important;
+          border-right: 0px !important;
+          border-bottom: 3px solid $link-color;
         }
       }
     }
