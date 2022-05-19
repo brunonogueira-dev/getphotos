@@ -150,6 +150,7 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
   left: -100vw;
   transition: 0.5s;
   padding-top: 80px;
+  overflow: hidden;
   border-right: 3px solid #A64985;
 }
 .menu.ativo {
@@ -228,6 +229,7 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
 }
 .painel-inicio h1, .painel-inicio h3 {
   font-size: 1.2rem;
+  color: #3F3073;
 }
 .painel-inicio .cartao {
   height: 300px;

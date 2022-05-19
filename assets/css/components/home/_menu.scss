@@ -10,6 +10,7 @@
   left: -100vw;
   transition: 0.5s;
   padding-top: 80px;
+  overflow: hidden;
   border-right: 3px solid $cor-segundaria;
 
   &.ativo {

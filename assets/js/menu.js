@@ -69,6 +69,19 @@ function nameMenu(status) {
         config.textContent = "Configurações";
         sair.textContent = "Sair";
         minimizar.textContent = "Recolher Menu"
+        var fade = document.querySelector(".texto-menu");
+        fadeIn(".home", 1.5);
+        fadeIn(".personalizacao", 1.5);
+        fadeIn(".sele-fotos", 1.5);
+        fadeIn(".cliente", 1.5);
+        fadeIn(".credito", 1.5);
+        fadeIn(".cartao", 1.5);
+        fadeIn(".pacote", 1.5);
+        fadeIn(".suporte", 1.5);
+        fadeIn(".conta", 1.5);
+        fadeIn(".configuracao", 1.5);
+        fadeIn(".sair", 1.5);
+        fadeIn(".minimizar-menu", 1.5);
     } else {
         home.textContent = "";
         personalizacao.textContent = "";
@@ -82,5 +95,17 @@ function nameMenu(status) {
         config.textContent = "";
         sair.textContent = "";
         minimizar.textContent = "";
+        fadeOut(".home", 1);
+        fadeOut(".personalizacao", 1);
+        fadeOut(".sele-fotos", 1);
+        fadeOut(".cliente", 1);
+        fadeOut(".credito", 1);
+        fadeOut(".cartao", 1);
+        fadeOut(".pacote", 1);
+        fadeOut(".suporte", 1);
+        fadeOut(".conta", 1);
+        fadeOut(".configuracao", 1);
+        fadeOut(".sair", 1);
+        fadeOut(".minimizar-menu", 1);
     }
 }
