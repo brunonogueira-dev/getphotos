@@ -57,19 +57,6 @@ function nameMenu(status) {
     var minimizar = document.querySelector('.minimizar-menu')
 
     if (status == "ativo") {
-        home.textContent = "Home";
-        personalizacao.textContent = "Personalização";
-        sFotos.textContent = "Seleção de Fotos";
-        cliente.textContent = "Clientes";
-        credito.textContent = "Ganhar Créditos";
-        cartao.textContent = "Cartão Fidelidade";
-        pacote.textContent = "Pacote e Valores";
-        suporte.textContent = "Suporte";
-        conta.textContent = "Conta";
-        config.textContent = "Configurações";
-        sair.textContent = "Sair";
-        minimizar.textContent = "Recolher Menu";
-        var fade = document.querySelector(".texto-menu");
         fadeIn(".home", 1.5);
         fadeIn(".personalizacao", 1.5);
         fadeIn(".sele-fotos", 1.5);
@@ -82,19 +69,20 @@ function nameMenu(status) {
         fadeIn(".configuracao", 1.5);
         fadeIn(".sair", 1.5);
         fadeIn(".minimizar-menu", 1.5);
+        home.textContent = "Home";
+        personalizacao.textContent = "Personalização";
+        sFotos.textContent = "Seleção de Fotos";
+        cliente.textContent = "Clientes";
+        credito.textContent = "Ganhar Créditos";
+        cartao.textContent = "Cartão Fidelidade";
+        pacote.textContent = "Pacote e Valores";
+        suporte.textContent = "Suporte";
+        conta.textContent = "Conta";
+        config.textContent = "Configurações";
+        sair.textContent = "Sair";
+        minimizar.textContent = "Recolher Menu";
+
     } else {
-        home.textContent = "";
-        personalizacao.textContent = "";
-        sFotos.textContent = "";
-        cliente.textContent = "";
-        credito.textContent = "";
-        cartao.textContent = "";
-        pacote.textContent = "";
-        suporte.textContent = "";
-        conta.textContent = "";
-        config.textContent = "";
-        sair.textContent = "";
-        minimizar.textContent = "";
         fadeOut(".home", 1);
         fadeOut(".personalizacao", 1);
         fadeOut(".sele-fotos", 1);
@@ -107,5 +95,18 @@ function nameMenu(status) {
         fadeOut(".configuracao", 1);
         fadeOut(".sair", 1);
         fadeOut(".minimizar-menu", 1);
+        home.textContent = "";
+        personalizacao.textContent = "";
+        sFotos.textContent = "";
+        cliente.textContent = "";
+        credito.textContent = "";
+        cartao.textContent = "";
+        pacote.textContent = "";
+        suporte.textContent = "";
+        conta.textContent = "";
+        config.textContent = "";
+        sair.textContent = "";
+        minimizar.textContent = "";
+
     }
 }
