@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html, body {
   background: #EDF7FF !important;
-  height: 100%;
+}
+
+body {
+  height: 100% !important;
 }
 
 a, p, span, li, h1, h2, h3, h4, h5, h6 {
@@ -136,8 +139,9 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
 }
 
 .menu {
-  height: 100vh;
-  width: 75vw;
+  height: 100vh !important;
+  min-height: 100%;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   background-color: #3F3073;
@@ -156,10 +160,10 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
   color: #FFF;
 }
 .menu .navbar-nav .nav-item a {
-  font-size: 1.2rem;
   color: #a9a9a9;
   text-transform: uppercase;
   font-weight: 500;
+  cursor: pointer;
 }
 .menu .navbar-nav .nav-item a .icon-menu {
   margin-right: 11px;
@@ -181,7 +185,7 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
     transition: 0.5s;
   }
   .menu.ativo {
-    width: 300px;
+    width: 250px;
     left: 0vw;
     transition: 0.1s;
   }
@@ -197,7 +201,6 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
     color: #FFF !important;
   }
   .menu.ativo .nav-item a.active .icon-menu, .menu.ativo .nav-item a:focus .icon-menu, .menu.ativo .nav-item a:hover .icon-menu {
-    font-size: 1.2rem;
     margin-right: 8px !important;
     padding-right: 16px !important;
     border-right: 3px solid #FFF !important;
@@ -212,7 +215,6 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
     color: #FFF !important;
   }
   .nav-item a.active .icon-menu, .nav-item a:focus .icon-menu, .nav-item a:hover .icon-menu {
-    font-size: 1.2rem;
     margin: 0px !important;
     padding: 0px !important;
     border-right: 0px !important;
@@ -221,12 +223,55 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
 }
 .painel-inicio {
   display: grid;
-  margin-top: 16px;
+  position: relative;
+  top: 40px;
 }
-.painel-inicio h1 {
-  color: #3F3073;
-  font-size: 1.3rem;
-  font-weight: 700;
+.painel-inicio h1, .painel-inicio h3 {
+  font-size: 1.2rem;
+}
+.painel-inicio .cartao {
+  height: 300px;
+  background-color: #3F3073;
+  padding: 20px;
+}
+.painel-inicio .ultimos-albuns {
+  margin-top: 20px;
+}
+.painel-inicio .lista-albuns-home {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.painel-inicio .lista-albuns-home a {
+  border: 0px;
+  color: #FFF;
+}
+.painel-inicio .lista-albuns-home a .total-img {
+  background-color: #A64985;
+}
+.painel-inicio .lista-albuns-home a:nth-child(even) {
+  background-color: #3F3073;
+}
+.painel-inicio .lista-albuns-home a:nth-child(even):hover, .painel-inicio .lista-albuns-home a:nth-child(even):focus {
+  background-color: #723973;
+  color: #FFF;
+}
+.painel-inicio .lista-albuns-home a:nth-child(odd) {
+  background-color: #232659;
+}
+.painel-inicio .lista-albuns-home a:nth-child(odd):hover, .painel-inicio .lista-albuns-home a:nth-child(odd):focus {
+  background-color: #723973;
+  color: #FFF;
+}
+.painel-inicio .paginacao .pagination .page-item .page-link {
+  color: #232659;
+}
+.painel-inicio .paginacao .pagination .page-item .page-link:hover {
+  color: #FFF;
+  background-color: #723973 !important;
+}
+.painel-inicio .paginacao .pagination .page-item.active .page-link {
+  color: #FFF;
+  background-color: #232659 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,29 +1,62 @@
-var btnMenu = document.querySelector("#menu-toggle");
+var btnMenu = document.querySelector(".menu-toggle");
 var menuPrincipal = document.querySelector("#menu-principal");
 
-var home = document.querySelector(".home");
-var personalizacao = document.querySelector(".personalizacao");
-var sFotos = document.querySelector(".sele-fotos");
-var cliente = document.querySelector(".cliente");
-var credito = document.querySelector(".credito");
-var cartao = document.querySelector(".cartao");
-var pacote = document.querySelector(".pacote");
-var suporte = document.querySelector(".suporte");
-var conta = document.querySelector(".conta");
-var config = document.querySelector(".configuracao");
-var sair = document.querySelector(".sair");
+var body = document.querySelector("body");
+var resolucao = body.clientWidth;
 
-if(window.matchMedia("min-width:992px")){
-    menuPrincipal.classList.add("ativo");
-    nameMenu();
+var gCookie = getCookie('menu');
+
+if (gCookie === null || gCookie === "ativo") {
+    if (resolucao >= 992 && gCookie === null) {
+        newCookie('menu', 'ativo');
+        gCookie = getCookie('menu');
+        menuPrincipal.classList.add('ativo');
+        nameMenu('ativo');
+    } else if (resolucao <= 991 && gCookie === null) {
+        newCookie('menu', 'inativo');
+        menuPrincipal.classList.remove("ativo");
+    } else {
+        gCookie = getCookie('menu');
+        if (gCookie === "ativo") {
+            menuPrincipal.classList.add('ativo');
+            nameMenu('ativo');
+        }else{
+            menuPrincipal.classList.remove('ativo');
+        }
+    }
 }
 
-btnMenu.addEventListener("click", function (event) {
-    menuPrincipal.classList.toggle("ativo");
-    nameMenu();
-});
-function nameMenu(){
-    if (home.textContent === "") {
+btnMenu.addEventListener("click", menuToggle);
+
+function menuToggle(){
+    var gStatus = getCookie('menu');
+    if (gStatus !== "ativo") {
+        newCookie('menu', 'ativo');
+        gStatus = getCookie('menu');
+        menuPrincipal.classList.add("ativo");
+        nameMenu("ativo");
+    } else {
+        newCookie('menu', 'inativo');
+        gStatus = getCookie('menu');
+        menuPrincipal.classList.remove("ativo");
+        nameMenu(null);
+    }
+}
+function nameMenu(status) {
+    var home = document.querySelector(".home");
+    var personalizacao = document.querySelector(".personalizacao");
+    var sFotos = document.querySelector(".sele-fotos");
+    var cliente = document.querySelector(".cliente");
+    var credito = document.querySelector(".credito");
+    var cartao = document.querySelector(".cartao");
+    var pacote = document.querySelector(".pacote");
+    var suporte = document.querySelector(".suporte");
+    var conta = document.querySelector(".conta");
+    var config = document.querySelector(".configuracao");
+    var sair = document.querySelector(".sair");
+    var minimizar = document.querySelector('.minimizar-menu')
+
+    if (status == "ativo") {
         home.textContent = "Home";
         personalizacao.textContent = "Personalização";
         sFotos.textContent = "Seleção de Fotos";
@@ -35,7 +68,8 @@ function nameMenu(){
         conta.textContent = "Conta";
         config.textContent = "Configurações";
         sair.textContent = "Sair";
-    }else{
+        minimizar.textContent = "Recolher Menu"
+    } else {
         home.textContent = "";
         personalizacao.textContent = "";
         sFotos.textContent = "";
@@ -47,5 +81,6 @@ function nameMenu(){
         conta.textContent = "";
         config.textContent = "";
         sair.textContent = "";
+        minimizar.textContent = "";
     }
 }

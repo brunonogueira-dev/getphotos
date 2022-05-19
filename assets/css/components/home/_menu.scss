@@ -1,6 +1,7 @@
-.menu{
-  height: 100vh;
-  width: 75vw;
+.menu {
+  height: 100vh !important;
+  min-height: 100%;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   background-color: $cor-primaria;
@@ -23,10 +24,10 @@
 
     .nav-item {
       a {
-        font-size: 1.2rem;
         color: #a9a9a9;
         text-transform: uppercase;
         font-weight: 500;
+        cursor: pointer;
 
         .icon-menu {
           margin-right: 11px;
@@ -54,7 +55,7 @@
 
     transition: 0.5s;
     &.ativo {
-      width: 300px;
+      width: 250px;
       left: 0vw;
       transition: 0.1s;
       .nav-item {
@@ -70,7 +71,6 @@
             color: $link-color !important;
 
             .icon-menu {
-              font-size: 1.2rem;
               margin-right: 8px !important;
               padding-right: 16px !important;
               border-right: 3px solid $link-color !important;
@@ -92,7 +92,6 @@
         color: $link-color !important;
 
         .icon-menu {
-          font-size: 1.2rem;
           margin: 0px !important;
           padding: 0px !important;
           border-right: 0px !important;

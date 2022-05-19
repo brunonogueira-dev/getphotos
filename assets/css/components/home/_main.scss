@@ -1,9 +1,70 @@
-.painel-inicio{
+.painel-inicio {
   display: grid;
-  margin-top: 16px;
-  h1{
-    color: $cor-primaria;
-    font-size: 1.3rem;
-    font-weight: 700;
+  position: relative;
+  top: 40px;
+  h1, h3{
+    font-size: 1.2rem;
+  }
+  .cartao {
+    height: 300px;
+    background-color: $cor-primaria;
+    padding: 20px;
+  }
+
+  .ultimos-albuns {
+    margin-top: 20px;
+  }
+
+  .lista-albuns-home {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    a {
+      border: 0px;
+      color: $link-color;
+
+      .total-img {
+        background-color: $cor-segundaria;
+      }
+
+    }
+
+    a:nth-child(even) {
+      background-color: $cor-primaria;
+
+      &:hover, &:focus {
+        background-color: $cor-terciaria;
+        color: $link-color;
+      }
+    }
+
+    a:nth-child(odd) {
+      background-color: $cor-quartenaria;
+
+      &:hover, &:focus {
+        background-color: $cor-terciaria;
+        color: $link-color;
+      }
+    }
+  }
+
+  .paginacao {
+    .pagination {
+      .page-item {
+        .page-link{
+          color: $cor-quartenaria;
+          &:hover{
+            color: $link-color;
+            background-color: $cor-terciaria !important;
+          }
+        }
+        &.active {
+          .page-link {
+            color: $link-color;
+            background-color: $cor-quartenaria !important;
+          }
+        }
+      }
+    }
   }
 }

@@ -15,12 +15,12 @@
     <title>Get Photos - Painel do Fotografo</title>
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid fixed-top">
     <div class="row">
         <header class="col-12 header-geral shadow-lg">
             <div class="row h-100 mh-100 d-flex justify-content-center">
                 <div class="col-2 d-flex justify-content-center justify-content-lg-start">
-                    <button class="bg-transparent border-0" id="menu-toggle"><i class="bi bi-list icon-menu"></i>
+                    <button class="bg-transparent border-0 menu-toggle" id="menu-toggle"><i class="bi bi-list icon-menu"></i>
                     </button>
                 </div>
                 <div class="col-8 d-flex justify-content-center align-items-center" aria-label="Logo getPhotos">
@@ -33,43 +33,56 @@
                 </div>
             </div>
         </header>
-        <nav class="navbar menu shadow-lg d-flex justify-content-start align-items-center" id="menu-principal">
+        <nav class="navbar menu shadow-lg d-flex justify-content-start align-items-center align-items-lg-center"
+             id="menu-principal">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html"><i
                             class="bi bi-house-door-fill icon-menu"></i><span class="home"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-brush-fill icon-menu"></i><span class="personalizacao"></span></a>
+                    <a class="nav-link" href="#"><i class="bi bi-brush-fill icon-menu"></i><span
+                            class="personalizacao"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-check2-square icon-menu"></i><span class="sele-fotos"></span></a>
+                    <a class="nav-link" href="#"><i class="bi bi-check2-square icon-menu"></i><span
+                            class="sele-fotos"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-person-circle icon-menu"></i><span class="cliente"></span></a>
+                    <a class="nav-link" href="#"><i class="bi bi-person-circle icon-menu"></i><span
+                            class="cliente"></span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="bi bi-cash-coin icon-menu"></i><span class="credito"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-postcard-heart icon-menu"></i><span class="cartao"></span></a>
+                    <a class="nav-link" href="#"><i class="bi bi-postcard-heart icon-menu"></i><span
+                            class="cartao"></span></a>
                 </li>
                 <hr>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="bi bi-box2-heart icon-menu"></i><span class="pacote"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-question-octagon-fill icon-menu"></i><span class="suporte"></span></a>
+                    <a class="nav-link" href="#"><i class="bi bi-question-octagon-fill icon-menu"></i><span
+                            class="suporte"></span></a>
                 </li>
                 <hr>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="bi bi-person-heart icon-menu"></i><span class="conta"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-gear-wide-connected icon-menu"></i><span class="configuracao"></span></a>
+                    <a class="nav-link" href="#"><i class="bi bi-gear-wide-connected icon-menu"></i><span
+                            class="configuracao"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-box-arrow-right icon-menu"></i><span class="sair"></span></a>
+                    <a class="nav-link" href="#"><i class="bi bi-box-arrow-right icon-menu"></i><span
+                            class="sair"></span></a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="menuToggle()" aria-label="Ocutar/Exibier Menu"><i class="bi bi-box-arrow-left icon-menu" id="recolher"></i><span
+                            class="minimizar-menu"></span></a>
                 </li>
             </ul>
         </nav>
@@ -79,17 +92,83 @@
     <div class="container">
         <div class="row">
             <main class="painel-inicio">
-                <div class="col-12"><h1 class="text-center">Painel do Fotografo</h1></div>
-                <div class="row d-flex justify-content-center align-items-center gap-lg-5 gap-3">
+                <div class="col-12">
+                    <h1 class="">Painel do Fotografo</h1>
+                </div>
+                <div class="row d-flex justify-content-between align-items-center gap-lg-5 gap-3">
                     <section class="col-12 col-lg-3 cartao bg-dark"><h1>texto</h1></section>
                     <section class="col-12 col-lg-3 cartao bg-dark"><h1>texto</h1></section>
-                    <section class="col-12 col-lg-3  cartao bg-dark"><h1>texto</h1></section>
+                    <section class="col-12 col-lg-3 cartao bg-dark"><h1>texto</h1></section>
+                </div>
+                <div class="row">
+                    <div class="col-12 ultimos-albuns">
+                        <h3 class="">Últimos álbuns criados</h3>
+                    </div>
+                    <div class="col-12">
+                        <div class="list-group lista-albuns-home">
+                            <a href="#"
+                               class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                Fabiana Nogueira
+                                <span class="badge total-img rounded-pill">57</span>
+                            </a>
+                            <a href="#"
+                               class="list-group-item list-group-item-action list-group-item-dark d-flex justify-content-between align-items-center">
+                                Lais Nogueira
+                                <span class="badge total-img rounded-pill">98</span>
+                            </a>
+                            <a href="#"
+                               class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                Isabely Nogueira
+                                <span class="badge total-img rounded-pill">203</span>
+                            </a>
+                            <a href="#"
+                               class="list-group-item list-group-item-action list-group-item-dark d-flex justify-content-between align-items-center">
+                                Mariana Matarazzo
+                                <span class="badge total-img rounded-pill">45</span>
+                            </a>
+                            <a href="#"
+                               class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                Noely Martins
+                                <span class="badge total-img rounded-pill">98</span>
+                            </a>
+                            <a href="#"
+                               class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                Patricia Lellis
+                                <span class="badge total-img rounded-pill">98</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <nav aria-label="Paginação" class="paginacao">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+
+                                <li class="page-item active" aria-current="page">
+                                    <span class="page-link">1</span>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </main>
         </div>
     </div>
 </div>
 
+<script src="assets/js/script.js"></script>
 <script src="assets/js/menu.js"></script>
 </body>
 </html>
