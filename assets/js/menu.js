@@ -68,7 +68,7 @@ function nameMenu(status) {
         conta.textContent = "Conta";
         config.textContent = "Configurações";
         sair.textContent = "Sair";
-        minimizar.textContent = "Recolher Menu"
+        minimizar.textContent = "Recolher Menu";
         var fade = document.querySelector(".texto-menu");
         fadeIn(".home", 1.5);
         fadeIn(".personalizacao", 1.5);
